@@ -83,7 +83,7 @@ const HeroSectionCard = () => {
         "Get expert technical assistance to resolve your computer and software challenges.",
       duration: "15 mins",
       timeZone: "Asia/Singapore",
-      via: "Cal Video",
+      via: "Kaali Video",
     },
     {
       name: "Emma Brown",
@@ -91,7 +91,7 @@ const HeroSectionCard = () => {
       description:
         "Join a virtual meeting to discuss your child's academic progress and development plan.",
       duration: "45 mins",
-      via: "Cal Video",
+      via: "Kaali Video",
       timeZone: "Europe/London",
     },
   ];
@@ -171,7 +171,7 @@ const HeroSectionCard = () => {
             )}
             {data[active].via && (
               <div>
-                {data[active].via === "Cal Video" ? (
+                {data[active].via === "Kaali Video" ? (
                   <CalVideoLogo className="w-5 h-6" />
                 ) : data[active].via === "Google Meet" ? (
                   <GMeetLogo className="w-5 h-6" />
