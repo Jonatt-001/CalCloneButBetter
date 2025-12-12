@@ -15,19 +15,19 @@ interface imgPropProps {
 const imgProps: imgPropProps[] = [
   {
     src: "/achievements/Cal.comOnTrustPilot.svg",
-    alt: "Cal.com Featured on Trust Pilot",
+    alt: "Kaali Space Meet Featured on Trust Pilot",
     width: 120,
     height: 54,
   },
   {
     src: "/achievements/Cal.comOnProductHunt.svg",
-    alt: "Cal.com Featured on Product Hunt",
+    alt: "Kaali Space Meet Featured on Product Hunt",
     width: 116,
     height: 54,
   },
   {
     src: "/achievements/Cal.comOnG2.svg",
-    alt: "Cal.com Featured on G2",
+    alt: "Kaali Space Meet Featured on G2",
     width: 112,
     height: 54,
   },
@@ -43,30 +43,30 @@ export default function Hero() {
           className="relative z-10 max-lg:p-4 max-lg:pt-[64px] flex flex-col gap-4 lg:gap-7 max-lg:items-center max-lg:text-center"
         >
           <span className="rounded-full bg-[#f5f5f5] border border-gray font-matter text-[12px] py-1 px-[14px] shadow-md w-fit text-[#242424] max-lg:mx-auto">
-            Cal.com lauches new v5.1
+            Kaali Space Meet launches v1.0
           </span>
           <h1 className=" text-[40px] md:text-[55px] xl:text-[70px] font-cal text-primary-black leading-none text-balance">
-            The better way to schedule your meetings
+            The smarter way to manage scheduling and client meetings
           </h1>
           <p className="text-[#898989] text-[16px] lg:text-[18px] max-w-md lg:max-w-2xl">
-            A fully customizable scheduling experience for individuals,
-            businesses taking calls and developers building scheduling platforms
-            where users meet users.
+            A flexible, enterprise-ready scheduling platform built to help
+            individuals, teams and growing businesses automate bookings,
+            streamline operations and deliver seamless client experiences.
           </p>
           <div className="w-[90%] space-y-4 md:max-w-[600px] max-w-[400px] lg:max-w-[400px] max-lg:mx-auto max-lg:px-2">
             <div className="flex gap-4 md:flex-row flex-col lg:flex-col">
               <StyledLink
-                href="https://app.cal.com/auth/sso/google"
+                href="#"
                 className="flex-1"
               >
-                <Google /> <span>Sign up with google</span>
+                <Google /> <span>Get started with Google</span>
               </StyledLink>
               <StyledLink
                 variant="light"
-                href="https://app.cal.com/signup"
+                href="#"
                 className="flex-1 shadow-none"
               >
-                Sign up with email
+                Create account with email
               </StyledLink>
             </div>
             <p className="text-center text-[#898989] text-[14px]">
