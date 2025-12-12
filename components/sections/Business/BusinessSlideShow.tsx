@@ -33,7 +33,7 @@ export default function BusinessSlideShow() {
   const data = [
     {
       company: "Deel",
-      Content: "See how Deel improved CSAT by 20% with Cal.com",
+      Content: "See how Deel improved CSAT by 20% with Kaali Space Meet",
       backgroundImage: Deel,
       gradient:
         "linear-gradient(to right,rgba(14,54,119,0.4),rgba(14,54,119,0.4))",
@@ -53,7 +53,7 @@ export default function BusinessSlideShow() {
     {
       company: "Angellist",
       Content:
-        "See how AngelList used instant meetings to easily meet with customers",
+        "See how AngelList used instant meetings to connect faster with customers through Kaali Space Meet",
       backgroundImage: Angellist,
       gradient:
         "linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/Angellist.png')",
@@ -71,7 +71,8 @@ export default function BusinessSlideShow() {
     },
     {
       company: "Shimmer",
-      Content: "See how Shimmer transformed ADHD coaching with Cal.com",
+      Content:
+        "See how Shimmer transformed ADHD coaching using Kaali Space Meet",
       backgroundImage: Shimmer,
       gradient:
         "linear-gradient(to right,rgba(251,214,55,0.4),rgba(251,214,55,0.4))",
@@ -89,7 +90,7 @@ export default function BusinessSlideShow() {
     },
     {
       company: "ATeam",
-      Content: "See how A.Team cut scheduling time by 70% with Cal.com",
+      Content: "See how A.Team cut scheduling time by 70% with Kaali Space Meet",
       backgroundImage: ATeam,
       gradient:
         "linear-gradient(to right,rgba(153,60,248,0.4),rgba(153,60,248,0.4)),url('/ATeam.png')",
