@@ -2,29 +2,31 @@ import Image from "next/image";
 import CustomButton from "@/components/StyledLink";
 import SquaredBackground from "@/public/SquaredBackground.png";
 import Section from "@/components/Section";
+
 interface imgPropProps {
   src: string;
   alt: string;
   width: number;
   height: number;
 }
+
 export default function GetStarted() {
   const imgProps: imgPropProps[] = [
     {
       src: "/achievements/Cal.comOnG2.svg",
-      alt: "Cal.com Featured on G2",
+      alt: "Kaali Space Meet Featured on G2",
       width: 75,
       height: 36,
     },
     {
       src: "/achievements/Cal.comOnGoogle.svg",
-      alt: "Cal.com Featured on Google",
+      alt: "Kaali Space Meet Featured on Google",
       width: 75,
       height: 36,
     },
     {
       src: "/achievements/Cal.comOnProductHunt.svg",
-      alt: "Cal.com Featured on Product Hunt",
+      alt: "Kaali Space Meet Featured on Product Hunt",
       width: 75,
       height: 36,
     },
@@ -50,12 +52,14 @@ export default function GetStarted() {
 
   return (
     <Section id="get-started">
-      <div className="card-shadow  overflow-clip rounded-xl px-1 py-6 md:px-1 md:py-20 bg-white border border-gray relative mt-5 mb-3">
+      <div className="card-shadow overflow-clip rounded-xl px-1 py-6 md:px-1 md:py-20 bg-white border border-gray relative mt-5 mb-3">
         <div className="flex flex-col items-center gap-8 relative z-10">
           <h1 className="font-cal md:leading-tight text-[35px] md:text-[45px] max-w-lg text-center">
-            Smarter, simpler scheduling
+            Smarter, simpler scheduling with Kaali Space Meet
           </h1>
-          <CustomButton href="https://cal.com/signup">Get Started</CustomButton>
+          <CustomButton href="#">
+            Get Started
+          </CustomButton>
           <div className="max-w-[900px] grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-7 lg:gap-8">
             {imgProps.map(({ src, alt, width, height }: imgPropProps) => (
               <Image
@@ -72,7 +76,7 @@ export default function GetStarted() {
         <Image
           fill
           src={SquaredBackground}
-          alt="Get Started Bg"
+          alt="Get Started Background"
           style={{
             objectFit: "cover",
             objectPosition: "left",
