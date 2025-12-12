@@ -32,48 +32,48 @@ const imgProps: imgPropProps[] = [
     height: 54,
   },
 ];
+
 export default function Hero() {
   return (
     <Section id="hero">
       <div className="card-shadow px-2 lg:p-20 lg:pb-10 mt-[84px] grid max-lg:grid-rows-[auto_1fr] gap-4 lg:grid-cols-2 lg:gap-10 bg-white rounded-xl border border-gray font-matter overflow-hidden relative pb-2">
         <motion.div
-          initial={{ opacity: 0, y: "30px" }}
-          animate={{ opacity: 1, y: "0px" }}
-          transition={{ ease: "easeOut" }}
+          initial={{ opacity: 0, y: '30px' }}
+          animate={{ opacity: 1, y: '0px' }}
+          transition={{ ease: 'easeOut' }}
           className="relative z-10 max-lg:p-4 max-lg:pt-[64px] flex flex-col gap-4 lg:gap-7 max-lg:items-center max-lg:text-center"
         >
           <span className="rounded-full bg-[#f5f5f5] border border-gray font-matter text-[12px] py-1 px-[14px] shadow-md w-fit text-[#242424] max-lg:mx-auto">
             Kaali Space Meet launches v1.0
           </span>
-          <h1 className=" text-[40px] md:text-[55px] xl:text-[70px] font-cal text-primary-black leading-none text-balance">
+
+          <h1 className="text-[40px] md:text-[55px] xl:text-[70px] font-cal text-primary-black leading-none text-balance">
             The smarter way to manage scheduling and client meetings
           </h1>
+
           <p className="text-[#898989] text-[16px] lg:text-[18px] max-w-md lg:max-w-2xl">
             A flexible, enterprise-ready scheduling platform built to help
             individuals, teams and growing businesses automate bookings,
             streamline operations and deliver seamless client experiences.
           </p>
+
           <div className="w-[90%] space-y-4 md:max-w-[600px] max-w-[400px] lg:max-w-[400px] max-lg:mx-auto max-lg:px-2">
             <div className="flex gap-4 md:flex-row flex-col lg:flex-col">
-              <StyledLink
-                href="#"
-                className="flex-1"
-              >
+              <StyledLink href="#" className="flex-1">
                 <Google /> <span>Get started with Google</span>
               </StyledLink>
-              <StyledLink
-                variant="light"
-                href="#"
-                className="flex-1 shadow-none"
-              >
+
+              <StyledLink variant="light" href="#" className="flex-1 shadow-none">
                 Create account with email
               </StyledLink>
             </div>
+
             <p className="text-center text-[#898989] text-[14px]">
               No credit card required
             </p>
           </div>
         </motion.div>
+
         <div className="relative z-30">
           <HeroClient />
           <div className="hidden lg:flex items-center flex-nowrap gap-12 mt-8 mx-2">
@@ -85,15 +85,16 @@ export default function Hero() {
                 alt={alt}
                 width={width}
                 height={height}
-                style={{
-                  width,
-                  height,
-                }}
+                style={{ width, height }}
               />
             ))}
           </div>
         </div>
-        <HeroBackground />
+
+        {/* FIX APPLIED: Background wrapped safely */}
+        <div className="absolute inset-0 overflow-hidden rounded-xl pointer-events-none">
+          <HeroBackground />
+        </div>
       </div>
     </Section>
   );
